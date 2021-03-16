@@ -10,12 +10,6 @@
     <p>Id: <input type="text" th:field="*{id}"></p>
     <p>Name: <input type="text" th:field="*{name}"></p>
     <p th:if="${#fields.hasErrors('name')}" th:errors="*{name}" style="color: red"></p>
-    <p>Batch:
-        <select th:field="*{batch}">
-            <option value="1">A07</option>
-            <option value="2">A09</option>
-        </select>
-    </p>
     <input type="submit" value="Create">
 </form>
 </body>

@@ -20,7 +20,6 @@
     <tr th:if="${students}" th:each="student : ${students}">
         <td th:text="${student.id}"></td>
         <td th:text="${student.name}"></td>
-        <td th:text="${student.batch.name}"></td>
         <td>
             <a href="#">Delete</a>
             <a href="#">Edit</a>

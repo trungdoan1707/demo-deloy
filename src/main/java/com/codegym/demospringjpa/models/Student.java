@@ -14,9 +14,6 @@ public class Student {
     @Size(min = 6, max = 15, message = "Ten phai tu 6 den 15 ky tu")
     private String name;
 
-    @ManyToOne
-    private Batch batch;
-
     public Student() {
     }
 
@@ -36,11 +33,4 @@ public class Student {
         this.name = name;
     }
 
-    public Batch getBatch() {
-        return batch;
-    }
-
-    public void setBatch(Batch batch) {
-        this.batch = batch;
-    }
 }
