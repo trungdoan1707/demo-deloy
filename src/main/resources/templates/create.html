@@ -7,6 +7,7 @@
 <body>
 <h3>Create Student</h3>
 <form th:object="${student}" method="post" action="/create">
+    <p>Id: <input type="text" th:field="*{id}"></p>
     <p>Name: <input type="text" th:field="*{name}"></p>
     <p th:if="${#fields.hasErrors('name')}" th:errors="*{name}" style="color: red"></p>
     <p>Batch:
